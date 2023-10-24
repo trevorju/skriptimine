@@ -12,6 +12,9 @@ echo -n "sinu töö dir:"
 pwd
 sleep 2
 echo -n "Arvuti IPa-s: $ipa "
+sleep 2
+clear
+
 
 
 
