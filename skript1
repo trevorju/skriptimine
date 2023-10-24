@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#see skript trükib välja kasutajanime ja asukoha
+#muutujale ipa omistame oma ipa-s
+
+ipa=`hostname -I`
+
+echo -n "Kasutajanimi:"
+whoami
+sleep 1
+echo -n "sinu töö dir:"
+pwd
+sleep 2
+echo -n "Arvuti IPa-s: $ipa "
+
+
+
+
+
