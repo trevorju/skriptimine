@@ -1,9 +1,14 @@
+
 #!/bin/bash
 #
 #Ylesanne kasutaja tervitamiseks
 
 
 u=`whoami`
-echo "Tere $u!"
+
+esimene=`whoami | cut -c1 | tr [a-z] [A-Z]`
+tei=`whoami | cut -c2-4`
+echo "Tere $esimene$tei!"
+
 
 
