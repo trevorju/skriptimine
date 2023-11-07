@@ -9,5 +9,5 @@
 esimene=`whoami | cut -c1 | tr [a-z] [A-Z]`
 teine=`whoami | cut -c2-4`
 
-echo  "Tere, $esimene$teine"
-echo  "!"
+echo  "Tere, $esimene$teine !"
+
