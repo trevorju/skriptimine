@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+
+#praks2 esimen
+
+
+kasutaja=`whoami`
+
+
+echo  "Tere, $kasutaja"
+echo  "!"
