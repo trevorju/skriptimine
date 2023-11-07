@@ -1,12 +1,13 @@
 #!/bin/bash
-
+#
+#Kasutaja tervitamine
 
 
 #praks2 esimen
 
 
-kasutaja=`whoami`
+esimene=`whoami | cut -c1 | tr [a-z] [A-Z]`
+teine=`whoami | cut -c2-4`
 
-
-echo  "Tere, $kasutaja"
+echo  "Tere, $esimene$teine"
 echo  "!"
