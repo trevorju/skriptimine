@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# EAP aja kalkulaator nädalatega
+
+read -p "Ainepunktide arv: " aineptk
+echo $aineptk
+read -p "Nädalate arv: " nadalad
+echo $nadalad
+
