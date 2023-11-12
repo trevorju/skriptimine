@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#Skript mis laseb sisestada bussi kohtade arvu ja inimesete arvu, ja väljastab mitu bussi on täis ja palju jääks maha
+
+
+read -p "Sisesta reisijate arv: " reis
+
+read -p "Sisesta bussi kohtade arv: " kohad
+
+taisBussid=` reis / kohad`
+
+mahaJaavad=` reis % kohad` 
+
+
+echo "Täielikult täidetud busse: $taisBussid"
+
+echo "Maha jäänud inimesi: $mahaJaavad"
