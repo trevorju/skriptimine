@@ -3,6 +3,9 @@
 # Skript mis küsib kasutaja käest tema täis nime
 
 
+
+
 echo -n "Sisesta oma ees- ja perenimi: "
+#loeb  sisestatud teksti ja määrab selle väärtustena valitud sonadele
 read eesnimi perenimi 
 echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi"
