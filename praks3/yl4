@@ -7,9 +7,9 @@ read -p "Sisesta reisijate arv: " reis
 
 read -p "Sisesta bussi kohtade arv: " kohad
 
-taisBussid=` reis / kohad`
+taisBussid=`echo "scale=0; $reis / $kohad" | bc`
 
-mahaJaavad=` reis % kohad` 
+mahaJaavad=`echo "scale=0; $reis % $kohad" | bc` 
 
 
 echo "Täielikult täidetud busse: $taisBussid"
