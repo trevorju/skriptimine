@@ -3,7 +3,13 @@
 # EAP aja kalkulaator nädalatega
 
 read -p "Ainepunktide arv: " aineptk
-echo $aineptk
-read -p "Nädalate arv: " nadalad
-echo $nadalad
 
+read -p "Nädalate arv: " nadalad
+
+
+
+aegk=`echo "scale=1; $aineptk * 26 / $nadalad" | bc`
+
+umardatud=`echo "scale=0;($aegk + 0.9)/1" | bc`
+
+echo $umardatud
