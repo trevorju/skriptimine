@@ -3,6 +3,8 @@
 # Skript mis leiab kas sisestatud arv on algarv või ei ole
 
 
+# echo "sisesta arv: "
+# read arv
 
 for arv in {1..20}
 do 
