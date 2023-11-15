@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Skript mis arvutab sisestatud arvu numbrite summa
+
+
+
+echo -n "Sisesta arv: "
+read arv
+read nr
+
+while [ $arv -ne 0 ]
+do 
+	jaak=$(($arv % 10))
+	sum=$(($sum + $jaak))
+	arv=$(($arv / 10))
+done 
+echo "Siestatud arvu $nr  numbrite väärtus on: $sum" 
