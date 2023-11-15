@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Kohendatud versiooni praks 3-me bussi ülesandest
+
+
+read -p "Sisesta reisijate arv: " reis
+
+read -p "Sisesta bussi kohtade arv: " kohad
+
+taisBussid=`echo "scale=0; $reis / $kohad" | bc`
+
+mahaJaavad=`echo "scale=0; $reis % $kohad" | bc`
+
+
+if test $mahaJaavad -gt 0	
+   then	
+		taisBussid=$((taisBussid + 1))
+fi
+
+echo "Kokku on vaja $taisBussid täisbussi"
