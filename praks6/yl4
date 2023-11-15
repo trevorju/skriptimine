@@ -3,10 +3,10 @@
 # Skript mis leiab kas sisestatud arv on algarv või ei ole
 
 
-echo -n  "Sisestada arv: "
-read arv
 
-
+for arv in {1..20}
+do 
+	
 if [ $arv -eq 0 -o $arv -eq 1 ]; then 
 	echo "$arv - ei ole algarv"
 else 
@@ -24,4 +24,4 @@ else
 	fi
 fi
 
-
+done
