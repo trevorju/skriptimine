@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# Skript mis tervitab kasutajat vastavalt sisestatud kellaaja järgi
+
+
+
+aeg=`date +"%H"`
+us=`whoami | cut -c1 | tr [a-z] [A-Z]`
+er=`whoami | cut -c2-4`
+
+if test $aeg -ge 6 -a $aeg -lt 12 ;
+  then
+        echo "Tere hommikust, $us$er !"
+elif test $aeg -ge 12 -a $aeg -lt 18 ;
+  then
+        echo "Tere päevast, $us$er!"
+elif test $aeg -ge 18 -a $aeg -lt 22 ;
+  then
+        echo "Tere õhtust, $us$er!"
+
+elif test $aeg -ge 22 -a $aeg -lt 24 ;
+  then
+        echo "Head ööd, $us$er!"
+elif test $aeg -ge 0 -a $aeg -lt 6 ;
+ then
+        echo "Head ööd, $us$er!"
+else
+        echo "Sellist kellaaega pole"
+fi
+
+
+
+
+
