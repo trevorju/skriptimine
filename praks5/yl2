@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+# Skript mis laseb sisestada 1-12 (kuude numbrid) ja ütleb selle järgi mis aastaaeg on
+
+
+echo -n "Sisesta kuu number: "
+read kuu 
+
+if test $kuu -eq 1 -a $kuu -eq 2
+  then 
+	echo "Hetkel on talv"
+elif test $kuu -ge 3 -a $kuu -le 5
+  then 
+	echo "Hetkel on kevad"
+elif test $kuu -ge 6 -a $kuu -le 8
+  then 
+	echo "Hetkel on suvi"
+elif test $kuu -ge 9 -a $kuu -le 11
+ then 
+	echo "Hetkel on kevad"
+
+#Märkasin, et tegelt saaks selle osa lisada esimese argumendi juurde kasutades -o OR-i
+elif test $kuu -eq 12 
+ then 
+	echo "Hetkel on talv"
+else 
+	echo "Sellist kuud pole olemas"
+
+fi
+
+
+
+if test $kuu -ge 4 -a $kuu -le 6 
+  then
+	echo "Oled praktikal"
+else 
+        echo "Kena päeva"
+
+fi
+
