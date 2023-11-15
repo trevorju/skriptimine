@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Skript mis vaatab kas number on paaris või paaritu
+
+
+echo "sisesta number"
+
+read number
+
+if [ $((number % 2)) -eq 0 ]; then
+	echo "Number on paarisarv"
+else
+	echo "Number on paarituarv"
+fi
