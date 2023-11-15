@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Skript millele peab numbri andma skripti käivitades ja määrab paarsuse
+
+
+if  [ $# -ne 1 ]; then
+	echo "Käivita see skript koos arvuga mille paarsust soovid kontrollida. Näiteks: $0 3"
+else
+   number=$1
+	if [ $((number % 2)) -eq 0 ]; then
+		echo "Number on paarisarv"
+	else
+		echo "Number on paarituarv"
+	fi
+fi
+
+echo $@
